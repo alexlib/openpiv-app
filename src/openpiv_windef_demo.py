@@ -1,16 +1,4 @@
-# ---
-# jupyter:
-#   jupytext:
-#     text_representation:
-#       extension: .py
-#       format_name: percent
-#       format_version: '1.3'
-#       jupytext_version: 1.6.0
-#   kernelspec:
-#     display_name: Python [conda env:drainage] *
-#     language: python
-#     name: conda-env-drainage-py
-# ---
+
 
 # %%
 import openpiv
@@ -161,7 +149,7 @@ settings.scale_plot = 50  # select a value to scale the quiver plot of the vecto
 # run the script with the given settings
 
 # %%
-windef.piv(settings);
+windef.piv(settings)
 
 # %%
 # Format and Image Sequence
