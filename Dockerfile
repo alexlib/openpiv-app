@@ -1,5 +1,5 @@
 FROM python:3.8
-LABEL maintainer="Robin Cole @robmarkcole"
+LABEL maintainer="Alex Liberzon @alexlib"
 
 EXPOSE 8501
 
