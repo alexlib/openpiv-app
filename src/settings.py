@@ -5,7 +5,7 @@ windef_settings = windef.Settings()
 
 'Data related settings'
 # Folder with the images to process
-windef_settings.filepath_images = image_path
+windef_settings.filepath_images = "./demo/"
 
 # Folder for the outputs
 windef_settings.save_path = './results/'
