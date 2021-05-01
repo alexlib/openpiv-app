@@ -144,7 +144,7 @@ settings.filter_kernel_size = 3  # kernel size for the localmean method
 # Select if you want to save the plotted vectorfield: True or False
 settings.save_plot = False
 # Choose wether you want to see the vectorfield or not :True or False
-settings.show_plot = False
+settings.show_plot = True
 settings.scale_plot = 50  # select a value to scale the quiver plot of the vectorfield
 # run the script with the given settings
 
