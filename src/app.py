@@ -38,7 +38,7 @@ newgif = []
 frame_range = st.slider('Frames',value=(0,len(images)),min_value=0,max_value=len(images))
 # st.write(frame_range[0],frame_range[1])
 
-arrow_length = st.slider('Arrow length scaling',min_value=1,max_value=10)
+arrow_length = st.slider('Arrow length scaling',min_value=1,max_value=10,value=10)
 
 counter = frame_range[0]
 for I,J in zip(images[frame_range[0]:frame_range[1]-1],images[frame_range[0]+1:frame_range[1]]):
@@ -46,7 +46,7 @@ for I,J in zip(images[frame_range[0]:frame_range[1]-1],images[frame_range[0]+1:f
     fig, ax = plt.subplots()
     ax.text(20,20, str(counter), color='y')    
     ax.imshow(I, cmap='gray', alpha=0.8, origin="upper")
-    ax.quiver(x, y, u, v, scale=10*arrow_length, color="y")
+    ax.quiver(x, y, u, v, scale=10*arrow_length, color="r")
     ax.axis('off')
     fig.savefig('tmp.png')
     # st.pyplot(fig)
