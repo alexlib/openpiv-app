@@ -19,3 +19,6 @@ bin-release/
 
 .DS_store
 *.pyc
+src/app.py
+tmp.png
+tmp.gif
