@@ -17,10 +17,17 @@ gifurl3 = 'http://www.vsj.jp/~pivstd/gif/image04.gif'
 gifurl = st.text_input('URL link to GIF file with particle motion',
 value = gifurl3)
 
-st.text('Nice examples:')
+st.text('Nice examples of birds:')
 st.write(gifurl1)
 st.write(gifurl2)
+
+st.text('Standard PIV images project:')
 st.write('http://www.vsj.jp/~pivstd/gif/image41.gif')
+
+st.write('https://cdn-images.postach.io/7d04521b-03ce-4aaf-92e2-cbaaf790865e/856ccd90-67da-4eea-9e47-ea015b00ac7c/fdb97cbd-efd4-4405-bb9b-763bc83a16c8.gif')
+
+st.text('Sneezing:')
+st.write('https://www.npr.org/assets/img/2016/08/23/sneeze-slomo.gif')
 
 # im = imageio.imread(imageio.core.urlopen(gifurl).read(), '.gif')
 im = imageio.get_reader(gifurl)
