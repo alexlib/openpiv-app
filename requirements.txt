@@ -2,3 +2,4 @@ streamlit
 openpiv
 black
 imageio
+matplotlib
