@@ -7,12 +7,17 @@ import numpy as np
 import imageio
 import matplotlib.pyplot as plt
 
-gifurl4 = ''
+gifurl4 = 'https://github.com/ElsevierSoftwareX/SOFTX_2020_33/raw/master/images/uniform07_0.gif'
 urls = {
     'Birds 1':'https://64.media.tumblr.com/3decdb9824c82cc625396d5162b9c72c/tumblr_ohqkj1wMvh1qckzoqo2_500.gifv',
     'Birds 2':'https://64.media.tumblr.com/15d6395f97f2d12e32a764c4a17be406/699471e89e1d5634-11/s500x750/eabb9c7c1ea719d4b9889d8e0217a878ed3f7a3f.gifv',
     'PIV Standard Project':'http://www.vsj.jp/~pivstd/gif/image04.gif',
     'Sneezing':'https://www.npr.org/assets/img/2016/08/23/sneeze-slomo.gif',
+    'Runkine vortex':'https://github.com/ElsevierSoftwareX/SOFTX_2020_33/raw/master/images/rankine_vortex07_0.gif',
+    'Uniform+Vortex': 'https://github.com/ElsevierSoftwareX/SOFTX_2020_33/raw/master/images/rk_uniform07_0.gif',
+    'Stagnation':'https://github.com/ElsevierSoftwareX/SOFTX_2020_33/raw/master/images/stagnation07_0.gif',
+    'Uniform flow':'https://github.com/ElsevierSoftwareX/SOFTX_2020_33/raw/master/images/uniform07_0.gif',
+    'Parabolic':'https://github.com/ElsevierSoftwareX/SOFTX_2020_33/raw/master/images/parabolic07_0.gif',
     'User input': gifurl4,
 }
 
