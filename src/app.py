@@ -27,7 +27,7 @@ st.sidebar.markdown("## Select GIF")
 # Using object notation
 with st.sidebar:
     choice = st.selectbox(
-        "Select the GIF",
+        "Select User input to paste your link:",
         urls.keys(),
     )
 
@@ -38,7 +38,7 @@ with st.sidebar:
 #         ("Standard (5-15 days)", "Express (2-5 days)")
 #     )
 
-st.title("PIV with OpenPIV")
+st.title("OpenPIV analysis of GIFs")
 
 st.markdown('## Selected:')
 st.write(choice)
