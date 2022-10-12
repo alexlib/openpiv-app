@@ -31,6 +31,11 @@ with st.sidebar:
         urls.keys(),
     )
 
+    frame_range = st.slider('Frames',value=(0,len(images)),min_value=0,max_value=len(images))
+    # st.write(frame_range[0],frame_range[1])
+
+    arrow_length = st.slider('Arrow length scaling',min_value=1,max_value=10,value=10)
+
 # # Using "with" notation
 # with st.sidebar:
 #     add_radio = st.radio(
@@ -61,10 +66,7 @@ for frame in im:
 
 newgif = []
 
-frame_range = st.slider('Frames',value=(0,len(images)),min_value=0,max_value=len(images))
-# st.write(frame_range[0],frame_range[1])
 
-arrow_length = st.slider('Arrow length scaling',min_value=1,max_value=10,value=10)
 
 counter = frame_range[0]
 for I,J in zip(images[frame_range[0]:frame_range[1]-1],images[frame_range[0]+1:frame_range[1]]):
