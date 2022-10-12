@@ -22,7 +22,7 @@ urls = {
 }
 
 st.sidebar.markdown("## Select GIF")
-st.sidebar.markdown("You can **select** the values to change the *chart*.")
+# st.sidebar.markdown("You can **select** the values to change the *chart*.")
 
 # Using object notation
 with st.sidebar:
