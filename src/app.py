@@ -13,12 +13,13 @@ urls = {
     'Birds 2':'https://64.media.tumblr.com/15d6395f97f2d12e32a764c4a17be406/699471e89e1d5634-11/s500x750/eabb9c7c1ea719d4b9889d8e0217a878ed3f7a3f.gifv',
     'PIV Standard Project':'http://www.vsj.jp/~pivstd/gif/image04.gif',
     'Sneezing':'https://www.npr.org/assets/img/2016/08/23/sneeze-slomo.gif',
-    'Runkine vortex':'https://github.com/ElsevierSoftwareX/SOFTX_2020_33/raw/master/images/rankine_vortex07_0.gif',
+    'Rankine vortex':'https://github.com/ElsevierSoftwareX/SOFTX_2020_33/raw/master/images/rankine_vortex07_0.gif',
     'Uniform+Vortex': 'https://github.com/ElsevierSoftwareX/SOFTX_2020_33/raw/master/images/rk_uniform07_0.gif',
-    'Stagnation':'https://github.com/ElsevierSoftwareX/SOFTX_2020_33/raw/master/images/stagnation07_0.gif',
+    'Stagnation flow':'https://github.com/ElsevierSoftwareX/SOFTX_2020_33/raw/master/images/stagnation07_0.gif',
     'Uniform flow':'https://github.com/ElsevierSoftwareX/SOFTX_2020_33/raw/master/images/uniform07_0.gif',
-    'Parabolic':'https://github.com/ElsevierSoftwareX/SOFTX_2020_33/raw/master/images/parabolic07_0.gif',
+    'Parabolic profile':'https://github.com/ElsevierSoftwareX/SOFTX_2020_33/raw/master/images/parabolic07_0.gif',
     'Suction feeding fish':'https://i.makeagif.com/media/7-16-2015/7YeY1n.gif',
+    'River (JPIV)':'https://eguvep.github.io/jpiv/fig/bode.gif',
     'User input': user_gifurl,
 }
 
