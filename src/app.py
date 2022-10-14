@@ -18,6 +18,7 @@ urls = {
     'Stagnation':'https://github.com/ElsevierSoftwareX/SOFTX_2020_33/raw/master/images/stagnation07_0.gif',
     'Uniform flow':'https://github.com/ElsevierSoftwareX/SOFTX_2020_33/raw/master/images/uniform07_0.gif',
     'Parabolic':'https://github.com/ElsevierSoftwareX/SOFTX_2020_33/raw/master/images/parabolic07_0.gif',
+    'Suction feeding fish':'https://i.makeagif.com/media/7-16-2015/7YeY1n.gif',
     'User input': user_gifurl,
 }
 
