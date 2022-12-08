@@ -22,3 +22,4 @@ bin-release/
 src/app.py
 tmp.png
 tmp.gif
+.vscode/PythonImportHelper-v2-Completion.json
