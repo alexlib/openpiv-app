@@ -3,4 +3,3 @@ openpiv
 black
 imageio
 matplotlib
-openpiv
