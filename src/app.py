@@ -1,8 +1,7 @@
 import streamlit as st
 
 # %%
-from openpiv.piv import simple_piv
-from openpiv import tools
+from openpiv import pyprocess, tools
 import numpy as np
 import imageio
 import matplotlib.pyplot as plt
@@ -72,11 +71,29 @@ arrow_length = st.slider('Arrow length scaling',min_value=1,max_value=10,value=1
 newgif = []
 counter = frame_range[0]
 for I,J in zip(images[frame_range[0]:frame_range[1]-1],images[frame_range[0]+1:frame_range[1]]):
-    x,y,u,v,s2n = simple_piv(I,J,plot=False)
+    vel = pyprocess.extended_search_area_piv(
+        frame_a.astype(np.int32), frame_b.astype(np.int32), window_size=32,
+        search_area_size=64,
+        overlap=8
+    )
+    x, y = pyprocess.get_coordinates(image_size=frame_a.shape,
+                                     search_area_size=64, overlap=8)
+
+    # fig, ax = plt.subplots(1, 2, figsize=(11, 8))
+    # ax[0].imshow(frame_a, cmap=plt.get_cmap("gray"), alpha=0.8)
+    # ax[0].quiver(x, y, vel[0], -vel[1], scale=50, color="r")
+    # ax[1].quiver(x, y[::-1, :], vel[0], -1*vel[1], scale=50, color="b")
+    # ax[1].set_aspect(1)
+    # # ax[1].invert_yaxis()
+    # plt.show()
+    
+    # x,y,u,v,s2n = simple_piv(I,J,plot=False)
     fig, ax = plt.subplots()
     ax.text(20,20, str(counter), color='y')
     ax.imshow(I, cmap='gray', alpha=0.8, origin="upper")
-    ax.quiver(x, y, u, -v, scale=10*arrow_length, color="r")
+    ax.quiver(x, y, vel[0], -vel[1], scale=50, color="r")
+    # ax.quiver(x, y, u, -v, scale=10*arrow_length, color="r")
+    ax[1].set_aspect(1)
     ax.axis('off')
     fig.savefig('tmp.png')
     # st.pyplot(fig)
