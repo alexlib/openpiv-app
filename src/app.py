@@ -94,7 +94,7 @@ for I,J in zip(images[frame_range[0]:frame_range[1]-1],images[frame_range[0]+1:f
     ax.imshow(I, cmap='gray', alpha=0.8, origin="upper")
     ax.quiver(x, y, vel[0], -vel[1], scale=50, color="r")
     # ax.quiver(x, y, u, -v, scale=10*arrow_length, color="r")
-    ax[1].set_aspect(1)
+    ax.set_aspect(1)
     ax.axis('off')
     fig.savefig('tmp.png')
     # st.pyplot(fig)
