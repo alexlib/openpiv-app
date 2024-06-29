@@ -71,7 +71,7 @@ arrow_length = st.slider('Arrow length scaling',min_value=1,max_value=10,value=1
 newgif = []
 counter = frame_range[0]
 for I,J in zip(images[frame_range[0]:frame_range[1]-1],images[frame_range[0]+1:frame_range[1]]):
-    vel = process.extended_search_area_piv(
+    vel = pyprocess.extended_search_area_piv(
         I.astype(np.int32), J.astype(np.int32), 
         window_size=32,
         search_area_size=64,
