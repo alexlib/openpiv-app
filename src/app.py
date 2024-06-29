@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 
 user_gifurl = 'https://github.com/alexlib/openpiv-app/raw/master/demo/ezgif.gif'
 urls = {
+    'Snow after turbine':'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM215bHk4ZmczbTd5eTZ2Ym9pNHR0dzV6bHQ3dXNpcjJ6bWkzNWc5ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/m9wxuXGSbTwOasOedM/giphy.gif',
     'Birds 1':'https://64.media.tumblr.com/3decdb9824c82cc625396d5162b9c72c/tumblr_ohqkj1wMvh1qckzoqo2_500.gifv',
     'Birds 2':'https://64.media.tumblr.com/15d6395f97f2d12e32a764c4a17be406/699471e89e1d5634-11/s500x750/eabb9c7c1ea719d4b9889d8e0217a878ed3f7a3f.gifv',
     'PIV Standard Project':'http://www.vsj.jp/~pivstd/gif/image04.gif',
