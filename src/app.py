@@ -77,7 +77,7 @@ for I,J in zip(images[frame_range[0]:frame_range[1]-1],images[frame_range[0]+1:f
         search_area_size=64,
         overlap=8
     )
-    x, y = pyprocess.get_coordinates(image_size=frame_a.shape,
+    x, y = pyprocess.get_coordinates(image_size=I.shape,
                                      search_area_size=64, overlap=8)
 
     # fig, ax = plt.subplots(1, 2, figsize=(11, 8))
